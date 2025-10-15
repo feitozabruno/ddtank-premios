@@ -18,16 +18,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const isoString = `${ANO_EXPIRAÇÃO}-${monthString}-${dayString}T${hourString}:${minuteString}:${secondString}-03:00`;
   const launchDate = new Date(isoString);
 
-  const countdownElement = document.querySelector(".contador h2.destaque");
+  const countdownElements = document.querySelectorAll(".contador h2.destaque");
+  const legendaDiasElements = document.querySelectorAll(".legenda-dias");
 
-  if (countdownElement) {
+  if (countdownElements.length > 0) {
     const interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = launchDate - now;
 
       if (distance < 0) {
         clearInterval(interval);
-        countdownElement.innerHTML = "EXPIROU!";
+        countdownElements.forEach((el) => {
+          el.innerHTML = "EXPIROU!";
+        });
         return;
       }
 
@@ -39,52 +42,56 @@ document.addEventListener("DOMContentLoaded", () => {
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      const legendaDias = document.querySelector(".legenda-dias");
-
       // Se o tempo restante for maior que 24 horas, exibe os dias.
       if (distance > 24 * 60 * 60 * 1000) {
         const formattedDays = String(days).padStart(2, "0");
         const formattedHours = String(hours).padStart(2, "0");
         const formattedMinutes = String(minutes).padStart(2, "0");
         const formattedSeconds = String(seconds).padStart(2, "0");
-        countdownElement.innerHTML = `${formattedDays}:${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
-        if (legendaDias) legendaDias.style.display = "inline";
+        const timeString = `${formattedDays}:${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+        countdownElements.forEach((el) => {
+          el.innerHTML = timeString;
+        });
+        legendaDiasElements.forEach((el) => {
+          if (el) el.style.display = "inline";
+        });
       } else {
         // Caso contrário, exibe apenas horas, minutos e segundos.
         const totalHours = days * 24 + hours;
         const formattedHours = String(totalHours).padStart(2, "0");
         const formattedMinutes = String(minutes).padStart(2, "0");
         const formattedSeconds = String(seconds).padStart(2, "0");
-        countdownElement.innerHTML = `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
-        if (legendaDias) legendaDias.style.display = "none";
+        const timeString = `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+        countdownElements.forEach((el) => {
+          el.innerHTML = timeString;
+        });
+        legendaDiasElements.forEach((el) => {
+          if (el) el.style.display = "none";
+        });
       }
     }, 1000);
   }
 });
 
-const modal = document.querySelectorAll(".modal");
-const closeModal = document.querySelectorAll(".close-modal");
-const form = document.querySelector(".modal-content form");
+const modal = document.querySelector(".modal");
+const closeModal = document.querySelector(".close-modal");
+const openModalBtn = document.querySelector(".botao2");
 
-closeModal[0].addEventListener("click", () => {
-  modal[0].classList.remove("show");
-});
+if (openModalBtn) {
+  openModalBtn.addEventListener("click", () => {
+    modal.classList.add("show");
+  });
+}
 
-window.addEventListener("click", (event) => {
-  if (event.target == modal[0]) {
-    modal[0].classList.remove("show");
-  }
-});
-
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  alert("Pré-registro realizado com sucesso!");
-  modal[0].classList.remove("show");
-});
+if (closeModal) {
+  closeModal.addEventListener("click", () => {
+    modal.classList.remove("show");
+  });
+}
 
 window.addEventListener("click", (event) => {
-  if (event.target == modal[1]) {
-    modal[1].classList.remove("show");
+  if (event.target == modal) {
+    modal.classList.remove("show");
   }
 });
 
