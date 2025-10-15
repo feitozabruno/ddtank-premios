@@ -64,7 +64,7 @@ body {
   padding-top: 3vw;
 
   img {
-    width: 32vw;
+    width: 40vw;
     height: auto;
   }
 }
@@ -73,7 +73,7 @@ body {
   margin-top: 3vw;
 
   img {
-    width: 35vw;
+    width: 60vw;
     height: auto;
   }
 }
@@ -89,11 +89,11 @@ body {
   margin: 0 auto;
 
   color: #fff;
-  padding: 2vw;
-  margin-top: 2vw;
+  padding: 2.5vw 4vw;
+  margin-top: 3vw;
 
   h3 {
-    font-size: 3.25vw;
+    font-size: 4vw;
     font-weight: normal;
     text-shadow: 1.5px 1.5px 1px #09202c, -1px -1px 2px #09202c;
   }
@@ -110,17 +110,17 @@ body {
 
   color: #fff;
   text-shadow: 1.5px 1.5px 2px #000, -1.5px -1.5px 2px #000;
-  margin-top: 2vw;
+  margin-top: 3vw;
 
   h1 {
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: normal;
   }
 
   img {
     position: absolute;
-    top: 5vw;
-    right: 0vw;
+    top: 7vw;
+    right: -5vw;
 
     width: 4vw;
     height: auto;
@@ -135,12 +135,12 @@ body {
 
   position: relative;
 
-  width: 52vw;
-  height: 14vw;
+  width: 90vw;
+  height: 24vw;
   margin: 0 auto;
 
   span {
-    font-size: 4vw;
+    font-size: 8vw;
     color: #fff;
     padding: 1.3vw 2.6vw;
     text-shadow: 1.5px 1.5px 2px #6c0f03, -1.5px -1.5px 2px #6c0f03;
@@ -152,18 +152,18 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 
-    margin-top: 3.5vw;
-    margin-left: 3.5vw;
+    margin-top: 6.5vw;
+    margin-left: 6.5vw;
   }
 
   button {
     position: absolute;
-    top: 5vw;
-    right: 3.5vw;
+    top: 9.5vw;
+    right: 5vw;
 
     img {
-      width: 3.2vw;
-      height: 4vw;
+      width: 5.2vw;
+      height: 6vw;
     }
   }
 
@@ -177,16 +177,17 @@ body {
 
 .alerta {
   margin: 0 auto;
-  margin-top: 2vw;
+  margin-top: 3vw;
   margin-bottom: 3vw;
   text-align: left;
-  width: 52vw;
+  width: 82vw;
 
-  font-size: 1.8vw;
+  font-size: 3.5vw;
 
   p {
     display: inline-block;
-    width: 90%;
+    margin-left: 5px;
+    width: 85%;
     color: #fff;
     text-shadow: 1px 1px 1px #000, -1px -1px 1px #000;
 
@@ -198,18 +199,18 @@ body {
 
   .icone {
     display: inline-block;
-    width: 9%;
+    width: 12%;
 
     img {
-      width: 3.6vw;
-      height: 3.5vw;
+      width: 10vw;
+      height: 10vw;
     }
   }
 }
 
 .cronometro {
   text-align: center;
-  margin-top: 1.3vw; // 10px;
+  margin-top: 3vw;
 
   .icone-calendario,
   .contador {
@@ -219,31 +220,32 @@ body {
 
   .icone-calendario {
     img {
-      width: 10.41vw; // 80px;
-      height: 10.41vw; // 80px;
+      width: 16vw;
+      height: 16vw;
     }
   }
 
   .contador {
-    margin-left: 1.3vw; // 10px;
+    margin-left: 1.3vw;
     text-align: left;
     color: #fff;
     line-height: 1;
+    text-shadow: 1px 2px 1px #000;
 
     h3 {
-      font-size: 3.125vw; // 24px;
+      font-size: 5vw;
       font-weight: normal;
     }
 
     h2 {
-      font-size: 5.2vw; // 40px;
+      font-size: 9vw;
     }
 
     .legenda {
-      margin-top: 0.65vw; // 5px;
-      font-size: 1.822vw; // 14px;
+      margin-top: 0.65vw;
+      font-size: 3vw;
       span + span {
-        margin-left: 0.65vw; // 5px;
+        margin-left: 0.65vw;
       }
     }
   }
@@ -251,25 +253,25 @@ body {
 
 .jogue-agora {
   h2 {
-    margin-top: 2vw;
-    margin-bottom: 1vw;
-    font-size: 3.64vw;
+    margin-top: 4vw;
+    margin-bottom: 1.5vw;
+    font-size: 6vw;
     color: #ffcc12;
-    text-shadow: 0px 3px 1px #822200;
+    text-shadow: 0px 3px 1px #822200, -1px -1px 1px #000;
     font-weight: normal;
   }
 
   button {
     line-height: 1;
-    font-size: 2.6vw;
+    font-size: 4vw;
 
     background-image: url(../img/base-botao-jogue-agora-1.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 
-    width: 56vw;
-    height: 10vw;
+    width: 90vw;
+    height: 14.5vw;
 
     color: #fff;
     text-shadow: 1px 1.5px 1px #822200;
@@ -297,7 +299,8 @@ body {
 
   h2 {
     margin-top: 2vw; // 16px;
-    font-size: 3.64vw; // 28px;
+    margin-bottom: 3vw; // 16px;
+    font-size: 4.5vw; // 28px;
     color: #ffcc12;
     text-shadow: 0px 3px 1px #822200, -1px -1px 1px #000;
   }
