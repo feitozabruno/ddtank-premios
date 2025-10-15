@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDTank Brasil - Pré Cadastro</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/mobile/logo.webp" type="image/webp" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <a href="#">
+          <img src="./img/mobile/logo.webp" alt="DDTank Brasil" />
+        </a>
+      </div>
+
+      <div class="novo-servidor">
+        <img src="./img/mobile/novo-servidor.webp" alt="Novo Servidor" />
+      </div>
+
+      <div class="info-servidor">
+        <h3>
+          <span class="destaque">S13: </span>Aventura Espacial
+          <br />
+          <span class="destaque">Já está online!</span>
+        </h3>
+      </div>
+
+      <div class="informativo">
+        <h1>
+          Resgate seu
+          <span class="destaque">código de coleta</span> dentro do jogo:
+        </h1>
+
+        <img src="./img/mobile/seta.webp" alt="" />
+      </div>
+
+      <div class="codigo-exclusivo">
+        <span>DDTBRASILS13</span>
+        <button class="copiar-codigo">
+          <img src="./img/icone-copiar.png" alt="" />
+        </button>
+      </div>
+
+      <div class="alerta">
+        <div class="icone">
+          <img src="./img/icone-alerta.png" alt="" />
+        </div>
+
+        <p>
+          <span>Atenção: </span>este código é limitado e expira em 1hr. Não
+          perca sua chance de começar com vantagens únicas!
+        </p>
+      </div>
+
+      <div class="cronometro">
+        <div class="icone-calendario">
+          <img src="./img/icone-relogio.png" alt="Relógio" />
+        </div>
+        <div class="contador">
+          <h3>Código expira em:</h3>
+          <h2 class="destaque">00:00:00</h2>
+          <div class="legenda">
+            <span class="legenda-dias">DIAS</span>
+            <span>HORAS</span>
+            <span>MINUTOS</span>
+            <span>SEGUNDOS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="jogue-agora">
+        <h2>Jogue agora:</h2>
+
+        <a href="#">
+          <button>
+            <p>Já possui conta? Clique para jogar</p>
+          </button>
+        </a>
+
+        <a href="#">
+          <button class="botao2">
+            <p>
+              Não possui conta?
+              <br />
+              Baixe para computador ou celular
+            </p>
+          </button>
+        </a>
+      </div>
+
+      <div class="explore">
+        <h2>EXPLORE O MUNDO ANTIGO DO DDTANK</h2>
+        <img src="./img/mobile/telas-e-personagens.webp" alt="" />
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <h2>Pré-Registro</h2>
+        <p>S13: Aventura Espacial</p>
+        <p>11 de outubro às 15 horas</p>
+        <form>
+          <label for="email">E-mail:</label>
+          <input id="email" type="email" placeholder="seu@email.com" required />
+          <label for="whatsapp">WhatsApp:</label>
+          <div class="phone-input-container">
+            <select name="country-code">
+              <option value="+55">🇧🇷 +55</option>
+              <option value="+351">🇵🇹 +351</option>
+              <option value="+54">🇦🇷 +54</option>
+            </select>
+            <input
+              id="whatsapp"
+              type="tel"
+              placeholder="(11) 9.8765-4321"
+              required
+            />
+          </div>
+          <p>
+            Preencha os dados acima para garantir as recompensas exclusivas e
+            concorrer ao sorteio de 5.000 reais em recarga
+          </p>
+          <button type="submit">Realizar Pré-Registro</button>
+        </form>
+      </div>
+    </div>
+    <script src="./script/main.js"></script>
+  </body>
+</html>
