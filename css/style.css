@@ -223,7 +223,6 @@ body {
 
 .jogue-agora h2 {
   margin-top: 4vw;
-  margin-bottom: 1.5vw;
   font-size: 6vw;
   color: #ffcc12;
   text-shadow: 0px 3px 1px #822200, -1px -1px 1px #000;
@@ -240,6 +239,7 @@ body {
   height: 14.5vw;
   color: #fff;
   text-shadow: 1px 1.5px 1px #822200;
+  margin-top: 2vw;
   transition: 300ms;
 }
 .jogue-agora button p {
