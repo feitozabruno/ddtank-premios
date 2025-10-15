@@ -62,16 +62,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-const preRegistroBtn = document.querySelector(".pre-registro-btn");
 const modal = document.querySelectorAll(".modal");
 const closeModal = document.querySelectorAll(".close-modal");
 const form = document.querySelector(".modal-content form");
-const mostrarPremiosBtn = document.querySelector(".visualizar-premios");
-
-preRegistroBtn.addEventListener("click", (event) => {
-  event.preventDefault();
-  modal[0].classList.add("show");
-});
 
 closeModal[0].addEventListener("click", () => {
   modal[0].classList.remove("show");
@@ -89,16 +82,25 @@ form.addEventListener("submit", (event) => {
   modal[0].classList.remove("show");
 });
 
-mostrarPremiosBtn.addEventListener("click", () => {
-  modal[1].classList.add("show");
-});
-
-closeModal[1].addEventListener("click", () => {
-  modal[1].classList.remove("show");
-});
-
 window.addEventListener("click", (event) => {
   if (event.target == modal[1]) {
     modal[1].classList.remove("show");
   }
 });
+
+const codigoExclusivoBtn = document.querySelector(".codigo-exclusivo");
+
+if (codigoExclusivoBtn) {
+  codigoExclusivoBtn.addEventListener("click", () => {
+    const codigo = codigoExclusivoBtn.querySelector("span").innerText;
+    navigator.clipboard
+      .writeText(codigo)
+      .then(() => {
+        alert(`Código "${codigo}" copiado para a área de transferência!`);
+      })
+      .catch((err) => {
+        console.error("Erro ao copiar o código: ", err);
+        alert("Erro ao copiar o código.");
+      });
+  });
+}

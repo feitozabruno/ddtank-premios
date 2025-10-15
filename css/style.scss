@@ -142,21 +142,20 @@ body {
   span {
     font-size: 8vw;
     color: #fff;
-    padding: 1.3vw 2.6vw;
     text-shadow: 1.5px 1.5px 2px #6c0f03, -1.5px -1.5px 2px #6c0f03;
     display: inline-block;
-    padding-top: 4px;
+    padding: 4.5vw 2vw;
 
     background-image: url("../img/codigo-coleta-sombra.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 
-    margin-top: 6.5vw;
-    margin-left: 6.5vw;
+    margin-top: 2vw;
+    margin-left: 6vw;
   }
 
-  button {
+  div {
     position: absolute;
     top: 9.5vw;
     right: 5vw;
@@ -212,6 +211,9 @@ body {
   text-align: center;
   margin-top: 3vw;
 
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 3vw 0;
+
   .icone-calendario,
   .contador {
     display: inline-block;
@@ -252,13 +254,7 @@ body {
 }
 
 .jogue-agora {
-  h2 {
-    margin-top: 4vw;
-    font-size: 6vw;
-    color: #ffcc12;
-    text-shadow: 0px 3px 1px #822200, -1px -1px 1px #000;
-    font-weight: normal;
-  }
+  margin-top: 4vw;
 
   button {
     line-height: 1;
