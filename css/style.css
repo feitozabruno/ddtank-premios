@@ -252,7 +252,7 @@ body {
 }
 
 .explore {
-  margin-top: 6vw;
+  margin-top: 8vw;
 }
 .explore h2 {
   margin-top: 2vw;
@@ -372,40 +372,117 @@ body {
   margin-bottom: 0;
 }
 
-.modal-items .modal-content {
-  width: 80%;
-}
-.modal-items .modal-content p {
-  font-size: 3vw;
-  margin-bottom: 2vw;
+.desktop {
+  display: none;
 }
 
-.premios div.itens {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 4px;
-}
-.premios div.itens .item {
-  position: relative;
-  display: inline-block;
-  margin: 2px;
-  transition: 300ms;
-}
-.premios div.itens .item:hover {
-  transform: scale(1.1);
-  filter: brightness(1.5);
-}
-.premios div.itens .item img {
-  width: 8vw;
-  height: 8vw;
-  margin: 1px;
-}
-.premios div.itens .item span {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  font-size: 2.5vw;
-  color: #fff;
-  text-shadow: -2px -2px 2px #061a3e, 2px -2px 1px #061a3e, -2px 2px 1px #061a3e, 2px 2px 1px #061a3e;
+@media (min-width: 768px) {
+  body {
+    background-image: none;
+  }
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+  .container {
+    max-width: 1024px;
+  }
+  .logo {
+    padding-top: 2vw;
+  }
+  .logo img {
+    width: 8vw;
+  }
+  .novo-servidor {
+    margin-top: 2.5vw;
+  }
+  .novo-servidor img {
+    width: 10vw;
+    height: auto;
+  }
+  .info-servidor {
+    padding: 1vw;
+    margin-top: 1vw;
+  }
+  .info-servidor h3 {
+    font-size: 1.2vw;
+  }
+  .informativo {
+    width: 22vw;
+    margin-top: 2.5vw;
+  }
+  .informativo h1 {
+    font-size: 1.5vw;
+  }
+  .informativo img {
+    top: 2.5vw;
+    right: -2vw;
+    width: 2vw;
+  }
+  .desktop {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .desktop .wrapper {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .desktop .wrapper .codigo-exclusivo {
+    display: inline-block;
+    width: 49%;
+    height: 7vw;
+    margin: 0 auto;
+  }
+  .desktop .wrapper .codigo-exclusivo span {
+    font-size: 2vw;
+    padding: 1.2vw;
+    margin-top: 0vw;
+    margin-left: 2vw;
+  }
+  .desktop .wrapper .codigo-exclusivo div {
+    top: 2.5vw;
+    right: 2vw;
+  }
+  .desktop .wrapper .codigo-exclusivo div img {
+    width: 1.5vw;
+    height: 2vw;
+  }
+  .desktop .wrapper .cronometro {
+    display: inline-block;
+    width: 49%;
+    margin: 0 auto;
+    margin-top: 3vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 3vw 0;
+  }
+  .desktop .wrapper .cronometro .icone-calendario,
+  .desktop .wrapper .cronometro .contador {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .desktop .wrapper .cronometro .icone-calendario img {
+    width: 2vw;
+    height: 2vw;
+  }
+  .desktop .wrapper .cronometro .contador {
+    margin-left: 0.1vw;
+    line-height: 1;
+  }
+  .desktop .wrapper .cronometro .contador h3 {
+    font-size: 1vw;
+    font-weight: normal;
+  }
+  .desktop .wrapper .cronometro .contador h2 {
+    font-size: 1vw;
+  }
+  .desktop .wrapper .cronometro .contador .legenda {
+    margin-top: 0.65vw;
+    font-size: 0.5vw;
+  }
+  .desktop .wrapper .cronometro .contador .legenda span + span {
+    margin-left: 0.65vw;
+  }
 }/*# sourceMappingURL=style.css.map */
