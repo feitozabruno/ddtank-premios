@@ -319,6 +319,8 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .show {
@@ -326,6 +328,10 @@ body {
 }
 
 .modal-content {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
   padding: 4vw;
   width: 100%;
   max-width: 100vw;
@@ -645,7 +651,6 @@ body {
     padding: 4rem;
     width: fit-content;
     max-width: fit-content;
-    margin: 0 auto;
     height: 76rem;
     font-size: 2.4rem;
     position: relative;
