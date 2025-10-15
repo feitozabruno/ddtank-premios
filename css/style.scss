@@ -449,40 +449,40 @@ body {
     padding-top: 2vw;
 
     img {
-      width: 8vw;
+      width: 14rem;
     }
   }
 
   .novo-servidor {
-    margin-top: 2.5vw;
+    margin-top: 2rem;
 
     img {
-      width: 10vw;
+      width: 25rem;
       height: auto;
     }
   }
 
   .info-servidor {
-    padding: 1vw;
-    margin-top: 1vw;
+    padding: 2rem 3rem;
+    margin-top: 2rem;
 
     h3 {
-      font-size: 1.2vw;
+      font-size: 2rem;
     }
   }
 
   .informativo {
-    width: 22vw;
-    margin-top: 2.5vw;
+    width: 100%;
+    margin-top: 2rem;
 
     h1 {
-      font-size: 1.5vw;
+      font-size: 2.4rem;
     }
 
     img {
-      top: 2.5vw;
-      right: -2vw;
-      width: 2vw;
+      top: 0;
+      right: 0;
+      width: 2rem;
     }
   }
 
@@ -494,11 +494,16 @@ body {
       display: inline-block;
       width: 100%;
       margin: 0 auto;
+
       .codigo-exclusivo {
         display: inline-block;
         width: 49%;
-        height: 7vw;
+        height: 100%;
         margin: 0 auto;
+
+        button {
+          display: inline-block;
+        }
 
         span {
           font-size: 2vw;

@@ -393,33 +393,33 @@ body {
     padding-top: 2vw;
   }
   .logo img {
-    width: 8vw;
+    width: 14rem;
   }
   .novo-servidor {
-    margin-top: 2.5vw;
+    margin-top: 2rem;
   }
   .novo-servidor img {
-    width: 10vw;
+    width: 25rem;
     height: auto;
   }
   .info-servidor {
-    padding: 1vw;
-    margin-top: 1vw;
+    padding: 2rem 3rem;
+    margin-top: 2rem;
   }
   .info-servidor h3 {
-    font-size: 1.2vw;
+    font-size: 2rem;
   }
   .informativo {
-    width: 22vw;
-    margin-top: 2.5vw;
+    width: 100%;
+    margin-top: 2rem;
   }
   .informativo h1 {
-    font-size: 1.5vw;
+    font-size: 2.4rem;
   }
   .informativo img {
-    top: 2.5vw;
-    right: -2vw;
-    width: 2vw;
+    top: 0;
+    right: 0;
+    width: 2rem;
   }
   .desktop {
     width: 100%;
@@ -433,8 +433,11 @@ body {
   .desktop .wrapper .codigo-exclusivo {
     display: inline-block;
     width: 49%;
-    height: 7vw;
+    height: 100%;
     margin: 0 auto;
+  }
+  .desktop .wrapper .codigo-exclusivo button {
+    display: inline-block;
   }
   .desktop .wrapper .codigo-exclusivo span {
     font-size: 2vw;
