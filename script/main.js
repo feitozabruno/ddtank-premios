@@ -95,19 +95,30 @@ window.addEventListener("click", (event) => {
   }
 });
 
-const codigoExclusivoBtn = document.querySelector(".codigo-exclusivo");
+const codigoExclusivoBtns = document.querySelectorAll(".codigo-exclusivo");
 
-if (codigoExclusivoBtn) {
-  codigoExclusivoBtn.addEventListener("click", () => {
-    const codigo = codigoExclusivoBtn.querySelector("span").innerText;
-    navigator.clipboard
-      .writeText(codigo)
-      .then(() => {
-        alert(`Código "${codigo}" copiado para a área de transferência!`);
-      })
-      .catch((err) => {
-        console.error("Erro ao copiar o código: ", err);
-        alert("Erro ao copiar o código.");
-      });
+if (codigoExclusivoBtns.length > 0) {
+  const jogueAgoraSection = document.querySelector(".jogue-agora");
+
+  codigoExclusivoBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const codigo = btn.querySelector("span").innerText;
+      navigator.clipboard
+        .writeText(codigo)
+        .then(() => {
+          alert(
+            `Código de coleta copiado com sucesso, entre no jogo e utilize-o na coleta.`
+          );
+
+          // Se o botão clicado for o da versão mobile, rola a página
+          if (btn.closest(".mobile") && jogueAgoraSection) {
+            jogueAgoraSection.scrollIntoView({ behavior: "smooth" });
+          }
+        })
+        .catch((err) => {
+          console.error("Erro ao copiar o código: ", err);
+          alert("Erro ao copiar o código.");
+        });
+    });
   });
 }
